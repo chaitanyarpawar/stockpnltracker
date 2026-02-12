@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stock Profit Tracker</string>
+    <string name="widget_description">Track your stock profit/loss in real-time</string>
+    <string name="widget_description_compact">Compact Stock Tracker widget</string>
+</resources>

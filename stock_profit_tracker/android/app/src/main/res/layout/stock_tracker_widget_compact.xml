@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_container_compact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/widget_background"
+    android:padding="14dp">
+
+    <!-- Header Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp">
+        
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_notification"
+            android:tint="#1976D2" />
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Stock P/L"
+            android:textColor="#1C1B1F"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        
+        <ImageView
+            android:id="@+id/widget_refresh_btn"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@android:drawable/ic_popup_sync"
+            android:tint="#1976D2"
+            android:padding="4dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Refresh" />
+        
+        <TextView
+            android:id="@+id/widget_total_pl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="₹0.00"
+            android:textColor="#00C853"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Column Headers -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="6dp"
+        android:layout_marginBottom="4dp"
+        android:background="#10000000">
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Stock"
+            android:textColor="#6B7280"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="LTP"
+            android:textColor="#6B7280"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:gravity="end" />
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="P&amp;L"
+            android:textColor="#6B7280"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <!-- Stock Items Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="top">
+
+        <!-- Stock Item 0: Name | LTP | PnL -->
+        <LinearLayout
+            android:id="@+id/stock_item_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp"
+            android:visibility="gone">
+            
+            <TextView
+                android:id="@+id/stock_0_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="TCS"
+                android:textColor="#1C1B1F"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end" />
+            
+            <TextView
+                android:id="@+id/stock_0_ltp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="₹3450"
+                android:textColor="#1C1B1F"
+                android:textSize="13sp"
+                android:gravity="end" />
+            
+            <TextView
+                android:id="@+id/stock_0_pl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="+₹100"
+                android:textColor="#00C853"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:gravity="end" />
+        </LinearLayout>
+
+        <!-- Stock Item 1: Name | LTP | PnL -->
+        <LinearLayout
+            android:id="@+id/stock_item_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp"
+            android:visibility="gone">
+            
+            <TextView
+                android:id="@+id/stock_1_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="INFY"
+                android:textColor="#1C1B1F"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end" />
+            
+            <TextView
+                android:id="@+id/stock_1_ltp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="₹1520"
+                android:textColor="#1C1B1F"
+                android:textSize="13sp"
+                android:gravity="end" />
+            
+            <TextView
+                android:id="@+id/stock_1_pl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="+₹50"
+                android:textColor="#00C853"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:gravity="end" />
+        </LinearLayout>
+
+        <!-- Stock Item 2: Name | LTP | PnL -->
+        <LinearLayout
+            android:id="@+id/stock_item_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp"
+            android:visibility="gone">
+            
+            <TextView
+                android:id="@+id/stock_2_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="RELIANCE"
+                android:textColor="#1C1B1F"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end" />
+            
+            <TextView
+                android:id="@+id/stock_2_ltp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="₹2890"
+                android:textColor="#1C1B1F"
+                android:textSize="13sp"
+                android:gravity="end" />
+            
+            <TextView
+                android:id="@+id/stock_2_pl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="-₹25"
+                android:textColor="#F44336"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:gravity="end" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Footer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:paddingTop="8dp">
+        
+        <TextView
+            android:id="@+id/widget_stock_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0 stocks"
+            android:textColor="#6B7280"
+            android:textSize="11sp" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Updated: "
+            android:textColor="#9CA3AF"
+            android:textSize="10sp" />
+        
+        <TextView
+            android:id="@+id/widget_last_updated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--:--:--"
+            android:textColor="#1976D2"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
