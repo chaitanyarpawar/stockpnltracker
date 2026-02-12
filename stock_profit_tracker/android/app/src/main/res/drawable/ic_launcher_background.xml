@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Modern gradient-like dark background -->
+    <path
+        android:fillColor="#1A237E"
+        android:pathData="M0,0 L108,0 L108,108 L0,108 Z"/>
+    
+    <!-- Subtle grid pattern for modern look -->
+    <path
+        android:fillColor="#283593"
+        android:pathData="M0,27 L108,27 L108,28 L0,28 Z"/>
+    <path
+        android:fillColor="#283593"
+        android:pathData="M0,54 L108,54 L108,55 L0,55 Z"/>
+    <path
+        android:fillColor="#283593"
+        android:pathData="M0,81 L108,81 L108,82 L0,82 Z"/>
+    <path
+        android:fillColor="#283593"
+        android:pathData="M27,0 L28,0 L28,108 L27,108 Z"/>
+    <path
+        android:fillColor="#283593"
+        android:pathData="M54,0 L55,0 L55,108 L54,108 Z"/>
+    <path
+        android:fillColor="#283593"
+        android:pathData="M81,0 L82,0 L82,108 L81,108 Z"/>
+
+</vector>

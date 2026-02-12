@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Modern Stock Chart Icon with Upward Trend -->
+    
+    <!-- Main upward trend line (green gradient effect) -->
+    <path
+        android:fillColor="#00C853"
+        android:pathData="M24,72 L38,58 L52,66 L66,42 L80,28 L84,28 L84,32 L70,46 L56,70 L42,62 L28,76 L24,76 Z"/>
+    
+    <!-- Trend line stroke for depth -->
+    <path
+        android:fillColor="#00E676"
+        android:strokeWidth="3"
+        android:strokeColor="#00E676"
+        android:pathData="M24,72 L38,58 L52,66 L66,42 L80,28"/>
+    
+    <!-- Upward arrow at the end -->
+    <path
+        android:fillColor="#00E676"
+        android:pathData="M80,28 L88,28 L88,20 L80,20 L80,28 Z"/>
+    <path
+        android:fillColor="#00E676"
+        android:pathData="M84,16 L92,24 L84,32 L76,24 Z"/>
+    
+    <!-- Data points (circles) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38,58 m-4,0 a4,4 0,1 1,8 0 a4,4 0,1 1,-8 0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M52,66 m-4,0 a4,4 0,1 1,8 0 a4,4 0,1 1,-8 0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M66,42 m-4,0 a4,4 0,1 1,8 0 a4,4 0,1 1,-8 0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M80,28 m-4,0 a4,4 0,1 1,8 0 a4,4 0,1 1,-8 0"/>
+    
+    <!-- Rupee symbol (₹) stylized -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20,82 L20,86 L32,86 L32,82 Z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20,88 L20,92 L28,92 L28,88 Z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M22,82 L22,96 L26,96 L26,92 L30,96 L35,96 L28,88 L26,88 L26,82 Z"/>
+
+</vector>

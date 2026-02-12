@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    
+    <!-- Widget preview icon - Stock chart trending up -->
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="#1A237E"
+        android:pathData="M24,24 m-22,0 a22,22 0,1 1,44 0 a22,22 0,1 1,-44 0"/>
+    
+    <!-- Chart line going up -->
+    <path
+        android:fillColor="#00E676"
+        android:strokeWidth="2"
+        android:strokeColor="#00E676"
+        android:pathData="M8,32 L16,26 L24,30 L32,18 L40,12"/>
+    
+    <!-- Arrow head -->
+    <path
+        android:fillColor="#00E676"
+        android:pathData="M40,12 L40,18 L34,12 Z"/>
+    
+    <!-- Data points -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M16,26 m-2.5,0 a2.5,2.5 0,1 1,5 0 a2.5,2.5 0,1 1,-5 0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M24,30 m-2.5,0 a2.5,2.5 0,1 1,5 0 a2.5,2.5 0,1 1,-5 0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M32,18 m-2.5,0 a2.5,2.5 0,1 1,5 0 a2.5,2.5 0,1 1,-5 0"/>
+
+</vector>
